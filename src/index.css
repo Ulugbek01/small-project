@@ -1,5 +1,88 @@
+/* Core styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Regular.woff2') format('woff2'),
+      url('./fonts/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Medium.woff2') format('woff2'),
+      url('./fonts/Poppins-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Bold.woff2') format('woff2'),
+      url('./fonts/Poppins-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-bg-color);
+}
+
+/* Common styles */
+.to-uppercase {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.to-center {
+  text-align: center;
+}
+
+:root {
+  --width: 1224px;
+  --primary-bg-color: #1E252B;
+  
+  /* text-color */
+  --primary-color: rgba(255, 255, 255, 0.9);
+  --secondary-color: rgba(255, 255, 255, 0.55);
+  
+  /* btn text color */
+  --btn-primary-color: #fff;
+  --btn-secondary-color: #FDF5FF;
+  --btn-bg-color: #FF6E30;
+  --btn-border-radius: 8px;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 70px;
+  color: var(--primary-color);
+}
+
+.discription {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--secondary-color);
 }
