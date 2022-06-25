@@ -7,7 +7,6 @@ export const HomeSection = styled.section``;
 
 export const Container = styled.div`
   display: flex;
-  align-items: center;
   justify-content: space-between;
   max-width: var(--width);
   margin: 0 auto;
@@ -18,7 +17,9 @@ export const Container = styled.div`
   }
 `;
 
-HomeSection.Info = styled.div``;
+HomeSection.Info = styled.div`
+  border: 1px solid red;
+`;
 
 HomeSection.Title = styled.h1`
   .point {
@@ -27,6 +28,7 @@ HomeSection.Title = styled.h1`
 `;
 
 HomeSection.Dscr = styled.p`
+  max-width: 500px;
   margin: 30px 0 60px 0;
 `;
 
@@ -56,16 +58,22 @@ HomeSection.InputWrapper = styled.div`
 HomeSection.SocialNetworks = styled.div`
   display: flex;
   align-items: center;
+  border: 1px solid green;
 `;
 
 HomeSection.ImgWrapper = styled.div`
-  position: relative;
+  text-align: right;
+  /* position: relative;
 
   img {
     width: 90%;
     position: absolute;
     right: -50px;
     top: -150px;
+  } */
+
+  img {
+    width: 90%;
   }
 `;
 

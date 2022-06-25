@@ -5,7 +5,8 @@ export const Button = ({
   width,
   height,
   type,
-  className
+  className,
+  children
 }) => {
   return (
     <Container 
@@ -13,7 +14,7 @@ export const Button = ({
       height={height}
       type={type}
       className={className}
-    >Button</Container>
+    >{children}</Container>
   )
 }
 

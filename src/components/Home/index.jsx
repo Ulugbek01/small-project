@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../Generic/Button';
 import { HomeSection, Container, Facebook, Instagram, Twitter, IconWrapper } from './style';
 import homeimg from '../../assets/imgs/home-img.png';
+import Tools from '../Tools';
 
 export const Home = () => {
   return (
@@ -29,9 +30,9 @@ export const Home = () => {
         <HomeSection.ImgWrapper>
           <img src={homeimg} alt="home-img" />
         </HomeSection.ImgWrapper>
-
-
       </Container>
+
+      <Tools/>
     </HomeSection>
   )
 }
